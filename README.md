@@ -7,6 +7,22 @@
 
 ---
 
+## Структура репозитория
+
+```
+.
+├── db/
+│   └── 00_create_db.sql       # создание роли и базы
+├── docs/screenshots/          # скриншоты для отчёта
+├── tests/
+│   ├── conftest.py            # параметры подключения (фикстура)
+│   └── test_db_connection.py  # автотесты подключения к БД
+├── pytest.ini
+├── requirements.txt
+└── README.md
+```
+
+---
 ## Python: автотест подключения к БД
 
 Выбрана СУБД **PostgreSQL** (разрешена условием), драйвер **psycopg 3**, запрос `select now()`.
@@ -189,18 +205,4 @@ Remove-Item Env:DB_PASSWORD
 Если PostgreSQL слушает не на `localhost:5432`, параметры можно задать переменными окружения
 (`DB_HOST`, `DB_PORT`, `DB_NAME`, `DB_USER`, `DB_PASSWORD`).
 
-## Структура репозитория
-
-```
-.
-├── db/
-│   └── 00_create_db.sql       # создание роли и базы
-├── docs/screenshots/          # скриншоты для отчёта
-├── tests/
-│   ├── conftest.py            # параметры подключения (фикстура)
-│   └── test_db_connection.py  # автотесты подключения к БД
-├── pytest.ini
-├── requirements.txt
-└── README.md
-```
 
