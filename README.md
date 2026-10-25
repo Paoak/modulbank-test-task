@@ -14,6 +14,7 @@
 ├── db/
 │   └── 00_create_db.sql       # создание роли и базы
 ├── docs/screenshots/          # скриншоты для отчёта
+├── interview-prep/            # дополнительно: SQL-задачи 1–7
 ├── tests/
 │   ├── conftest.py            # параметры подключения (фикстура)
 │   └── test_db_connection.py  # автотесты подключения к БД
